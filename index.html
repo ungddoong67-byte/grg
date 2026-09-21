@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 구로구퀵서비스 맞춤 운송 차종 안내</h3>
+          <p>신도림동 구로동 가리봉동 고척동 개봉동 오류동 궁동 온수동 천왕동 항동 수궁동 구로 구로공단 구로디지털단지 구로구 전지역</p>
             <ul>
                 <li>🏍️ 구로구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 구로구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+  <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
